@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+
+    <style>
+        table,tr,th,td{
+            border: 2px solid brown;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div >
+        <!-- Tables -->
+
+        <!-- Table in html is used to display table data in 
+            
+            - Tabluar format
+            - It is used to display data in rows and columns
+            - It is used to display data in a grid format
+            - It is used to display data in a matrix format
+        
+        -->
+
+
+        <table style="width: 50%;"> <!-- Start of table -->
+
+            <tr> <!-- Table row -->
+                <th> <!-- Table Head -->
+                    ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Salary
+                </th>
+            </tr> <!-- Table row closed -->
+
+
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    John Doe
+                </td>
+                <td>
+                    30
+                </td>
+                <td>
+                    $50000
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    David 
+                </td>
+                <td>
+                    50
+                </td>
+                <td>
+                    $80000
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                     Doe
+                </td>
+                <td>
+                    20
+                </td>
+                <td>
+                    $20000
+                </td>
+            </tr>
+        </table>
+
+
+        <hr>
+        <br>
+        <br>
+
+        <!-- Rowspan -->
+
+        <!-- rowspan collapes rows in table -->
+
+        <table style="width: 50%;">
+            <tr>
+                <th >ID</th>
+                <th >Name</th>
+                <th rowspan="2">last name</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">First Name</td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+            
+                <td>doe</td>
+            </tr>
+        </table>
+
+            <hr>
+
+            <br>
+            <br>
+
+        <!-- Colspan -->
+
+        <!-- colspan collapes columns in table -->
+         <table style="width: 50%;">
+
+             <tr>
+                 <th colspan="2">ID</th>
+                 <th >Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">2</td>
+                    
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>First Name</td>
+                    <td>doe</td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>
