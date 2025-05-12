@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div>
+        <h1>Forms in HTML</h1>
+
+        <!-- 
+        
+            -- Form is a container for different types of input elements,
+             such as text fields, checkboxes, radio buttons, submit buttons, etc.
+            -- The form element is used to collect user input and send it to a server for processing.
+            -- The action attribute specifies where to send the form data when the form is submitted. 
+            -- action attribute can be a URL or a file path.
+            it allows you to redirect to another page after the form is submitted.
+        -->
+
+        <form action="./submit.html" >
+
+            <label for="name">Name:</label>
+            <!-- label is used to display the text output for the user -->
+
+            <input type="text" id="name" required placeholder="Enter your name">
+            <!--
+            
+                The input element is used to create different types of input fields.
+                The type attribute specifies the type of input field, such as text, password, email, number, etc.
+                The id attribute is used to uniquely identify the input field.
+                The required attribute specifies that the input field must be filled out before submitting the form.
+                The placeholder attribute is used to display a hint or example text inside the input field.
+                The value attribute is used to set the default value of the input field.
+                The name attribute is used to specify the name of the input field, which is sent to the server when the form is submitted.
+                The input has many types, such as text, password, email, number, date, file, etc.
+                The type attribute specifies the type of input field, such as text, password, email, number, etc.   
+                       ----- input type="text" is used to create a single-line text input field.
+                       ----- input type="password" is used to create a password input field, which hides the text entered by the user.
+                       ----- input type="email" is used to create an email input field, which validates the email format.
+                       ----- input type="number" is used to create a number input field, which allows only numeric values.
+                       ----- input type="date" is used to create a date input field, which allows the user to select a date from a calendar.
+                       ----- input type="file" is used to create a file input field, which allows the user to upload a file.
+                       ----- input type="checkbox" is used to create a checkbox input field, which allows the user to select one or more options.
+                       ----- input type="radio" is used to create a radio button input field, which allows the user to select one option from a group of options.
+                       ----- input type="submit" is used to create a submit button, which submits the form data to the server.
+                       ----- input type="reset" is used to create a reset button, which clears the form data.
+                       ----- input type="button" is used to create a button that does not submit the form data.
+                       ----- input type="hidden" is used to create a hidden input field, which is not visible to the user but is sent to the server when the form is submitted.
+                       ----- input type="color" is used to create a color input field, which allows the user to select a color
+                       ----- type = 'url' is used to create a url input field, which allows the user to enter a url-
+                       ----- type = 'select' is used to create a dropdown list, which allows the user to select one option from a list of options.
+                       ----- type = 'textarea' is used to create a multi-line text input field, which allows the user to enter a large amount of text.
+                       ----- type = 'option' is used to create a dropdown list, which allows the user to select one option from a list of options.
+
+                       -->
+
+            <br><br>
+
+            <label for="ph-number">Ph-Number</label>
+            <input type="number" id="ph-number" required  placeholder="Enter your phone number">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+            <br><br>
+
+            <label for="password">password<span style="color: red; font-size: medium">* </span>:</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+            <br><br>
+
+            <label for="date">DOB:</label>
+            <input type="date" id="date" required >
+            <br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" id="url" required placeholder="Enter your url">
+            <br><br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file" required >
+            <br><br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file" required multiple>
+            <br><br>
+
+            <div>
+                <div>Gender:</div>
+
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="Gender" value="male">
+                
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="Gender" value="female">
+                
+                <label for="others">Others</label>
+                <input type="radio" id="others" name="Gender" value="others">
+                <br><br>
+            </div>
+
+
+
+            <label for="color">Choose your color :</label>
+            <input type="color" id="color" required placeholder="Enter your email">
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </div>
+</body>
+</html>
